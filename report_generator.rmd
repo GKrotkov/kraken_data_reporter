@@ -1,0 +1,35 @@
+---
+title: "Scouting Report Generator"
+author: "Gabriel Krotkov"
+date: "2023-03-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Libraries & Data
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+library(tidyverse)
+library(gridExtra)
+
+idx <- 1
+
+
+team <- ftworth_teams[idx]
+
+photo_path <- paste("photos/", team, ".jpg", sep = "")
+
+data <- read.csv("mainframe.csv")
+```
+
+# Robot Photo
+
+![Robot Photo](`photo_path`)
+
+```{r}
+
+```
+
